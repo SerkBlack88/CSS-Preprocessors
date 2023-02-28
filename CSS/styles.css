@@ -244,4 +244,110 @@ footer {
   padding-top: 15px;
   grid-column: 6/8;
   grid-row: 2;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(100px) rotate(0turn);
+  }
+  20% {
+    transform: translateX(-10px) rotate(-0.5turn);
+  }
+  100% {
+    transform: translateX(450px) rotate(2turn);
+  }
+}
+@keyframes sweep {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(400px);
+  }
+  100% {
+    transform: translateX(-400px);
+  }
+}
+@keyframes sparkling {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes sparkling-rotate {
+  0% {
+    transform: translateX(100px) rotate(0turn) scale(1);
+  }
+  50% {
+    transform: translateX(-10px) rotate(1turn) scale(1.5);
+  }
+  100% {
+    transform: translateX(450px) rotate(2turn) scale(1);
+  }
+}
+@media (max-width: 768px) {
+  .nav {
+    justify-content: space-between;
+    margin-left: 8%;
+    gap: 0;
+  }
+  .nav__list {
+    display: none;
+  }
+  .nav__list--mobile {
+    display: inline-block;
+    margin-right: 10%;
+  }
+  .section-headline {
+    text-align: left;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .section-headline__paragraphs {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    gap: 0;
+  }
+  .section-headline__paragraphs p {
+    width: auto;
+  }
+  .section-headline h3 {
+    text-align: left;
+  }
+  .read-more-button {
+    display: block;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 58px 0 75px 0;
+  }
+  .footer__logo-footer {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .header__Union--animated {
+    left: 100px;
+    bottom: 40px;
+    animation-name: sparkling;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+  }
+  .header__starsImage--animated {
+    animation-name: sparkling-rotate;
+    animation-duration: 20s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+  }
 }/*# sourceMappingURL=styles.css.map */

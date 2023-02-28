@@ -1,0 +1,76 @@
+@media (max-width: 768px) {
+    .nav {
+      justify-content:space-between;
+      margin-left: 8%;
+      gap: 0;
+
+      &__list {
+        display: none;
+      }
+
+      &__list--mobile {
+        display: inline-block;
+        margin-right: 10%;
+      }
+    }
+    
+    .section-headline {
+      text-align: left;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-left: 10%;
+      margin-right: 10%;
+
+      &__paragraphs {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0;
+        gap: 0;
+
+        p {
+            width: auto;
+        }
+      }
+
+      h3 {
+        text-align: left;
+      }
+    }
+
+    .read-more-button {
+      display: block;
+    }
+  
+    footer {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding: 58px 0 75px 0;
+    }
+  
+    .footer {
+        &__logo-footer {
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+    }
+
+    .header {
+        &__Union--animated {
+            left: 100px;
+            bottom: 40px;
+            animation-name: sparkling;
+            animation-duration: 2s;
+            animation-timing-function: ease-in;
+            animation-iteration-count:infinite;
+        }
+        &__starsImage--animated {
+            animation-name: sparkling-rotate;
+            animation-duration: 20s;
+            animation-timing-function: ease-in;
+            animation-iteration-count:infinite
+        }
+    }
+    
+  }
