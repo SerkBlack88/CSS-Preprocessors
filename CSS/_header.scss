@@ -1,0 +1,53 @@
+header {
+    background-image: url("/assets/header_background.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 49px 0 256px;
+
+    h2 {
+        font-family: "Source Sans Pro", sans-serif;
+        color: $white;
+        font-weight: 400;
+        color: $light-grey; 
+    }
+  }
+
+  h1 {
+    font-family: "Oswald", sans-serif;
+    color: #fff;
+    font-weight: 700;
+    font-size: 48px;
+  }
+
+.header {
+    &__starsImage--animated {
+        position: absolute;
+        right: 100px;
+        animation-name: slide;
+        animation-duration: 40s;
+        animation-timing-function: ease-in;
+        animation-iteration-count:infinite
+    }
+
+    &__Union--animated {
+        position: absolute;
+        left: 100px;
+        bottom: 40px;
+        animation-name: sweep;
+        animation-duration: 20s;
+        animation-timing-function: ease-in;
+        animation-iteration-count:infinite
+    }
+
+    &__logo:hover {
+        transform: scale(1.5);
+    }
+
+    &__main-title {
+        margin-bottom: 42px;
+    }
+}

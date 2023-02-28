@@ -1,0 +1,53 @@
+footer {
+    background-color: $dark-grey;
+    padding-left: 140px;
+    padding-right: 70px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: $grey-04;
+    padding-bottom: 78px;
+    padding-top: 39px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .footer {
+    &__logo-footer {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        color: $white;
+        font-size: 18px;
+        line-height: 16px;
+        letter-spacing: 1.2px;
+        padding-bottom: 12px;
+    }
+
+    &__address {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    &__link {
+        padding-top: 15px;
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+
+    &__link:link {
+        color: $grey-04;
+        text-decoration: none;
+    }
+
+    &__link:visited {
+        color: $grey-04;
+    }
+
+    &__rights {
+        padding-top: 15px;
+        grid-column: 6/8;
+        grid-row: 2;
+    }
+  }
